@@ -265,6 +265,7 @@ PRODUCT_COPY_FILES += \
 
 # Set default USB interface
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.camera.shutter.disable=1 \
     persist.sys.usb.config=mtp
 
 ifeq ($(TARGET_BUILD_VARIANT),eng)
